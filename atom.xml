@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://whitechiina.github.io/</id>
     <title>White</title>
-    <updated>2020-12-17T05:08:20.189Z</updated>
+    <updated>2020-12-17T05:12:15.870Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://whitechiina.github.io/"/>
     <link rel="self" href="https://whitechiina.github.io//atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://whitechiina.github.io//images/avatar.png</logo>
     <icon>https://whitechiina.github.io//favicon.ico</icon>
     <rights>All rights reserved 2020, White</rights>
+    <entry>
+        <title type="html"><![CDATA[关于]]></title>
+        <id>https://whitechiina.github.io//post/about</id>
+        <link href="https://whitechiina.github.io//post/about">
+        </link>
+        <updated>2019-01-25T11:09:48.000Z</updated>
+        <content type="html"><![CDATA[<p>这是关于的页面，可以在这里向世界介绍你！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://whitechiina.github.io//post/hello-gridea</id>
