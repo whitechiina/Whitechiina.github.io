@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>JS中的防抖和节流 | White</title>
+<title>JavaScript | White</title>
 
 <link rel="shortcut icon" href="https://whitechiina.github.io//favicon.ico?v=1608184123501">
 
@@ -33,11 +33,11 @@
 <!--<script src="media/scripts/index.js"></script>-->
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
 </head>
 <body>
 <div class="main gt-bg-theme-color-first">
-    <style>
+    <div class="main-content">
+        <style>
     /* 导航栏样式 */
     .navbar {
         position: relative;
@@ -198,115 +198,49 @@
         }
     }
 </script>
-    <div class="post-container">
-        <div class="post-detail gt-bg-theme-color-second">
-            <article class="gt-post-content">
-                <h2 class="post-title">
-                    JS中的防抖和节流
-                </h2>
-                <div class="post-info">
-                    <time class="post-time gt-c-content-color-first">
-                        · 2020-12-17 ·
-                    </time>
-                    
-                        <a href="https://whitechiina.github.io//tag/KDfuHD92o" class="post-tags">
-                            # JavaScript
-                        </a>
-                    
-                </div>
-                <div class="post-content">
-                    <p>平时很多应用场景需要用到防抖和节流，面试时候也基本会问到，这里总结一下。</p>
-<h1 id="防抖">防抖</h1>
-<p>在事件被触发n秒后再执行回调，如果在这n秒内又被触发，则重新计时。</p>
-<p>直接上代码</p>
-<pre><code>&lt;body&gt;
-    &lt;div id='app'&gt;
-        &lt;button class=&quot;button&quot; @click='clickMe'&gt;clickMe&lt;/button&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;script src=&quot;vue.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-    //封装防抖
-    function debounce(fn, wait) {
-        let timer = null;
-        let args = arguments;
-        return function () {
-            if (timer) {
-                clearTimeout(timer);
-            }
-            timer = setTimeout(() =&gt; {
-                fn.apply(this, args)
-            }, wait)
-        }
-    };
-    var vue = new Vue({
-        el: &quot;#app&quot;,
-        data: {
-            num: 0
-        },
-        methods: {
-            clickMe: debounce(function (e) {
-                var myDate = new Date();
-                console.log(myDate.toLocaleTimeString())
-            }, 2000)
-        },
-    })
-&lt;/script&gt;
-</code></pre>
-<h1 id="节流">节流</h1>
-<p>规定在一个单位时间内，只能触发一次函数。如果这个单位时间内触发多次函数，只有一次生效。</p>
-<p>还是直接看代码</p>
-<pre><code>&lt;body&gt;
-    &lt;div id='app'&gt;
-        &lt;button class=&quot;button&quot; @click='clickThis'&gt;节流&lt;/button&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;script src=&quot;vue.js&quot;&gt;&lt;/script&gt;
-
-&lt;script&gt;
-    //节流
-    function throttle(fn, wait) {
-        let timer = null
-        return function () {
-            let args = arguments
-            if (!timer) {
-                timer = setTimeout(() =&gt; {
-                    timer = null
-                    fn.apply(this, args)
-                }, wait)
-            }
-        }
-    }
-    var vue = new Vue({
-        el: &quot;#app&quot;,
-        data: {
-            num: 0
-        },
-        methods: {
-            clickThis: throttle(function () {
-                console.log(&quot;节流&quot;);
-                var myDate = new Date();
-                console.log(myDate.toLocaleTimeString())
-            }, 2000)
-        },
-    })
-&lt;/script&gt;
-</code></pre>
-<h1 id="总结">总结</h1>
-<p>1、防抖就像游戏中的buff，你吃了一个buff，开始倒计时，这时候你又吃了一个buff，则重新记时。</p>
-<p>2、节流就是游戏中的技能CD，你按下技能以后，再规定的时间内，你再按也没用，只能能冷却好了再按。</p>
-
-                </div>
-            </article>
+        <div class="current-tag-container">
+            <h2 class="title gt-c-content-color-first">
+                #JavaScript
+            </h2>
         </div>
-
+        <div class="post-list-container">
+    <div class="post-inner">
         
-
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://whitechiina.github.io//post/js-zhong-de-fang-dou-he-jie-liu">
+                            <span class="post-title gt-c-content-color-first">JS中的防抖和节流</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2020-12-17 ·
+                        </time>
+                        
+                            <a href="https://whitechiina.github.io//tag/KDfuHD92o" class="post-tag">
+                                # JavaScript
+                            </a>
+                        
+                    </div>
+                </div>
+                
+                    <a href="https://whitechiina.github.io//post/js-zhong-de-fang-dou-he-jie-liu" class="post-feature-image"
+                       style="background-image: url('https://whitechiina.github.io//post-images/js-zhong-de-fang-dou-he-jie-liu.jpg')">
+                    </a>
+                
+            </div>
         
-
-        
-
-        
+    </div>
+</div>
+        <div class="pagination-container">
+    
+    
+</div>
 
         <div class="site-footer gt-c-content-color-first">
     <div class="slogan gt-c-content-color-first">记录学习 记录生活</div>
